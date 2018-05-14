@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 import time
 
 #getting author's category name 
-with open('0-commons-pdf-author-cat-book-list.csv', 'r') as commonsAuthorsList:
+with open('2015-tva-commons-pdf-author-s-list.csv', 'r') as commonsAuthorsList:
     reader = csv.reader(commonsAuthorsList,delimiter='~')
     for row in reader:
 #   if len(row) == 2:
@@ -89,7 +89,7 @@ with open('0-commons-pdf-author-cat-book-list.csv', 'r') as commonsAuthorsList:
                     #with open(booksAuthor+'-down-info.csv', 'a') as bookIndexs3:
                     #   writer = bookIndexs3.write(downloadURLcleanTitle+'\n')
 
-                    with open('2015-tva-commons-pdf-all-info-clean.csv', 'a') as bookIndexs4:
+                    with open('2015-tva-commons-pdf-books-all-info.csv', 'a') as bookIndexs4:
                         writer = bookIndexs4.write(indexBookInfoAll+'\n')
 
                     #with open('2015-tva-commons-pdf-down-info.csv', 'a') as bookIndexs5:
