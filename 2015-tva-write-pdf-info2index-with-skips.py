@@ -6,7 +6,7 @@ import time
 import re
 
 WAIT_TIME = 15
-with open('pdfInfo.csv', 'r') as csvfile:
+with open('2015-tva-commons-pdf-books-all-info.csv', 'r') as csvfile:
 	reader = csv.reader(csvfile,delimiter="~")
 	for row in reader:
 	#if len(row) == 8:
