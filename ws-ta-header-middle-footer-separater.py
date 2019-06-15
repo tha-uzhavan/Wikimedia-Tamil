@@ -6,7 +6,7 @@ with open('000-ws-ta-pre-clean.csv', 'r') as csvfile:
 	reader = csv.reader(csvfile,delimiter="~")
 #	count = 0
 	for row in reader:
-		subprocess.call("sed -i 1d 000-ws-ta-pre-clean.csv",shell=True)          
+#		subprocess.call("sed -i 1d 000-ws-ta-pre-clean.csv",shell=True)          
 	#if len(row) == 8: உயிரியல்
 	# if not 'booktitle' in row:   
 		wikiPage = row[0]#.decode('utf-8')
