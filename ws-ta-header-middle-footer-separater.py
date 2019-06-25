@@ -1,13 +1,13 @@
 #-*- coding: utf-8 -*-
 import csv, time, subprocess, re, pywikibot
 
-WAIT_TIME = 15
+#WAIT_TIME = 15
 with open('000-ws-ta-pre-clean.csv', 'r') as csvfile:
 	reader = csv.reader(csvfile,delimiter="~")
 #	count = 0
 	for row in reader:
 #		subprocess.call("sed -i 1d 000-ws-ta-pre-clean.csv",shell=True)          
-	#if len(row) == 8: உயிரியல்
+	#if len(row) == 8: 
 	# if not 'booktitle' in row:   
 		wikiPage = row[0]#.decode('utf-8')
 		print (wikiPage)
@@ -28,3 +28,4 @@ with open('000-ws-ta-pre-clean.csv', 'r') as csvfile:
 		print ('\n............................................................  header  ..............................................................\n' + headerTag1 + '\n\n')
 		print ('\n............................................................  middle  ..............................................................\n' + no_tag_text + '\n\n')
 		print ('\n............................................................  footer  ..............................................................\n' + footerTag + '\n\n')
+#		time.sleep(WAIT_TIME)
