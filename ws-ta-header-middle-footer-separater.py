@@ -23,9 +23,9 @@ with open('000-ws-ta-pre-clean.csv', 'r') as csvfile:
 		tags = re.findall(search_pattern, existingText)
 		
 		headerTag1 = tags[0]
-		footerTag = tags[1]
-		no_tag_text = re.sub(search_pattern, '', existingText).strip()
+		footerTag  = tags[1]
+		middleText = re.sub(search_pattern, '', existingText).strip()
 		print ('\n............................................................  header  ..............................................................\n' + headerTag1 + '\n\n')
-		print ('\n............................................................  middle  ..............................................................\n' + no_tag_text + '\n\n')
+		print ('\n............................................................  middle  ..............................................................\n' + middleText + '\n\n')
 		print ('\n............................................................  footer  ..............................................................\n' + footerTag + '\n\n')
 #		time.sleep(WAIT_TIME)
